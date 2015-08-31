@@ -1,0 +1,30 @@
+.cust-profile {
+	font-size: 250px;
+}
+
+.cust-list {
+	font-size: 150px;
+}
+
+.checkbox-left {
+	width: 10%;
+	text-align: left;
+}
+
+.customer-list {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.modal-body, .modal-header {
+	background-color: white;
+}
+
+.text-pink {
+	color: pink;
+}
+
+
+input[type=checkbox] {
+	margin: 0 0 0px !important;
+}

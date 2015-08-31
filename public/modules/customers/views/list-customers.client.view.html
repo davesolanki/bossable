@@ -1,0 +1,28 @@
+<section data-ng-controller="CustomersController as customersCtrl">
+    <div class="page-header">
+        <h1>Customers</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-xs-12">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" ng-model="searchText">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">Go!</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 text-center">
+            <button class="btn btn-success" ng-click="customersCtrl.modalCreate('lg')">
+                <i class="glyphicon glyphicon-user"></i> <br>
+                New Customer
+            </button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <customer-list> </customer-list>
+    <div class="alert alert-warning text-center" data-ng-hide="!customers.$resolved || customers.length">
+    	No Customers yet, why don't you <a ng-click="customersCtrl.modalcreate('lg')">create one</a>?
+    </div>
+</section>
